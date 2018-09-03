@@ -1,0 +1,14 @@
+@import '~antd/dist/antd.css';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.title {
+  width: 300px;
+  text-align: center;
+}
+
+.ant-list-item-content{
+  justify-content: space-between;
+}
