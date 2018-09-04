@@ -46,7 +46,7 @@ class TodoListUI extends React.Component {
             <List.Item
               className="list"
             >
-              <span>{item.list}</span>
+              <span className="content">{item.list}</span>
               {<Button
                 size='small'
                 type="primary"

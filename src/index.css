@@ -12,3 +12,9 @@ body {
 .ant-list-item-content{
   justify-content: space-between;
 }
+.content {
+  flex: 1;
+}
+.ant-btn {
+  margin-right: 10px;
+}
