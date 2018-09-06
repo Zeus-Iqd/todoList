@@ -6,6 +6,8 @@ import {
 } from './actionTypes'
 const defaultState = {
   inputValue: '',
+  visibility: false,
+  content: '',
   list: []
 }
 export default (state = defaultState, action) => {
