@@ -4,6 +4,8 @@ const path = require('path')
 const static = require('koa-static')
 const bodyParser = require('koa-bodyparser')
 const app = new Koa()
+var cors = require('koa2-cors');
+app.use(cors())
 app.use(bodyParser())
 // // 中间层，用来连接数据库
 const Monk = require('monk')
@@ -59,7 +61,7 @@ app.use(router.routes()).use(router.allowedMethods())
 
 
 
-app.listen(3001, () => {
+app.listen(3001, (req, res) => {
   console.log(222)
 })
 
